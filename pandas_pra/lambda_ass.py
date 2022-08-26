@@ -1,0 +1,16 @@
+import numpy as np
+list_num= np.arange(5.5,20.5,0.5).tolist()
+print(list_num)
+# li=list(range(5,21))
+# print(li)
+odd_num_count=len(list(filter(lambda x: (x%2 !=0),list_num)))
+even_num_count=len(list(filter(lambda x: (x%2==0),list_num)))
+print("the count of odd numbers present in the array is:",odd_num_count)
+print("the count of even numbers present in the array is:",even_num_count)
+square_num=list(map(lambda x:x**2,list_num))
+cube_num=list(map(lambda x: x**3, list_num))
+print("square of every number in the list are")
+print(square_num)
+print("cube of every number in the list are")
+print(cube_num)
+
